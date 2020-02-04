@@ -7,7 +7,7 @@ const stringLambda = (str, cb) => cb(str);
 let test1 = stringLambda('supercalifragilisticexpialidocious', str => (str.replace(/c/g, ',c').split(',')));
 console.log(test1)
 
-// part bgit push --set-upstream origin PS1
+// part b
 // lambda function that creates and returns details of the string as required
 let test2 = stringLambda(
         'supercalifragilisticexpialidocious',

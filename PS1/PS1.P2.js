@@ -1,5 +1,13 @@
 //PS1.P2
 
+// need to change evaluate to:
+/*
+    doEval('8+2') -- should return a function --> left + right
+    call should be
+
+    doEval('8+2')('8+2')
+ */
+
 const evaluate = expression => {
     switch (expression.charAt(1)) {
         case '+':
@@ -21,21 +29,16 @@ const evaluate = expression => {
 }
 
 const exp1 = '4+2';
-let operator = evaluate(exp1);
-//console.log(`${operator}`);
-console.log(`${exp1} = ${operator(exp1)}`);
+console.log(`${exp1} = ${evaluate(exp1)(exp1)}`);
 
 const exp2 = '5*7';
-operator = evaluate(exp2);
-//console.log(`${operator}`);
-console.log(`${exp2} = ${operator(exp2)}`);
+console.log(`${exp2} = ${evaluate(exp2)(exp2)}`);
 
 const exp3 = '6-1';
-operator = evaluate(exp3);
-//console.log(`${operator}`);
-console.log(`${exp3} = ${operator(exp3)}`);
+console.log(`${exp3} = ${evaluate(exp3)(exp3)}`);
 
 const exp4 = '9/2';
-operator = evaluate(exp4);
-//console.log(`${operator}`);
-console.log(`${exp4} = ${operator(exp4)}`);
+console.log(`${exp4} = ${evaluate(exp4)(exp4)}`);
+
+const exp5= '8/2';
+console.log(`${exp5} = ${evaluate(exp5)(exp5)}`);
