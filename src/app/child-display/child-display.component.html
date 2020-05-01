@@ -1,0 +1,13 @@
+<div *ngIf="artists">
+<p>Artist names and collabs are: </p>
+
+<!-- one component -->
+<ul >
+  <li *ngFor="let wx of artists">
+
+    {{wx['artist'].artist_name}}
+
+  </li>
+</ul>
+
+</div>

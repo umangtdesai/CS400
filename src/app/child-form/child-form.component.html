@@ -1,0 +1,10 @@
+<form [formGroup]="getAllArtist" (ngSubmit)="getArtist()">
+
+
+  <p> Enter an artist of length at least one or nothing will be displayed</p>
+  <input type="text" formControlName="artist_name" placeholder="Name of artist" required minlength="1">
+  <button type="submit">Get Artists</button>
+
+  <p> Collab names will be displayed below if data exists</p>
+
+</form>
