@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://G:/My Drive/College/2020.02/CS 103/.idea/CS 103.iml" filepath="G:/My Drive/College/2020.02/CS 103/.idea/CS 103.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../.idea/CS 400.iml" filepath="$PROJECT_DIR$/../.idea/CS 400.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/CS400.iml" filepath="$PROJECT_DIR$/.idea/CS400.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../CS 400 prev solutions/MEAN-stack/PS4/.idea/PS4.iml" filepath="$PROJECT_DIR$/../../CS 400 prev solutions/MEAN-stack/PS4/.idea/PS4.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,43 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<div>
+  <h3>Click on the song for more details:</h3>
+
+  <ul>
+  <li *ngFor="let song of songs">
+    <label (click)="selectSong(song)">{{song.song_name}}</label>
+  </li>
+  </ul>
+
+</div>
+
+<div *ngIf="selectedSong">
+<!-- display selected contact -->
+  <h3>Details for {{selectedSong.song_name}} </h3>
+
+  <p>Artist:</p>
+<input type="text" [(ngModel)]="selectedSong.artist" readonly>
+
+ <!-- Was trying to print song lyric by lyric but failed :(
+  <script>
+    function printingSong(songLyrics) {
+      var s = songLyrics.split('\n');
+      var i = 0;
+
+      for(i = 0; i < s.length; i++){
+        document.write(s[i]);
+      }
+
+    }
+  </script>
+  -->
+
+  <p>Lyrics:</p>
+  <p> {{selectedSong.lyrics}} </p>
+
+</div>
